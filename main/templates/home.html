@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="main">
+    <div class="card mt-3 p-3">
+        <div class="d-flex justify-content-space-between">
+            <div class="me-3 select-wrapper">
+                <p class="text-muted mb-1">Currency</p>
+               <select class="form-select me-3">
+                  <option selected value="1">BTC</option>
+                  <option value="2">ETH</option>
+                  <option value="3">LTC</option>
+                </select> 
+            </div>
+            <div class="me-3 select-wrapper">
+                <p class="text-muted mb-1">Period</p>
+                <select class="form-select">
+                  <option selected>Live</option>
+                  <option value="1">1m</option>
+                  <option value="2">5m</option>
+                  <option value="3">10m</option>
+                </select>
+            </div>
+            <div class="select-wrapper">
+                <p class="text-muted mb-1">Amount</p>
+               <select class="form-select">
+                  <option selected>1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select> 
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
